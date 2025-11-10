@@ -14,7 +14,7 @@ func TestGetAPIKey(t *testing.T) {
 		t.Fatalf("expected: %s, recived: %s", apiKey, key)
 	}
 
-	headers.Set("Authrization", "xdd")
+	headers.Set("Authorization", "xdd")
 	if _, err := GetAPIKey(headers); err == nil {
 		t.Fatal("expected an error but recived none")
 	}
