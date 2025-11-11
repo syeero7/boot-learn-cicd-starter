@@ -20,7 +20,3 @@ jobs:
 
       - name: Run build script
         run: bash ./scripts/buildprod.sh
-
-      - name: Error Report
-        if: failure()
-        run: cat error.log
